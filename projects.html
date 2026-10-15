@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <meta
+            name="description"
+            content="A selection of Eesa's software, web and product projects."
+        />
+        <title>Projects | Eesa</title>
+        <link
+            rel="preconnect"
+            href="https://fonts.googleapis.com"
+        />
+        <link
+            rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin
+        />
+        <link
+            href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            href="css/style.css"
+        />
+    </head>
+    <body>
+        <header class="site-header">
+            <a
+                class="brand"
+                href="index.html"
+                aria-label="Eesa Munir home"
+                >eesa munir<span class="brand-dot">.</span></a
+            ><button
+                class="menu-toggle"
+                aria-label="Open navigation"
+                aria-expanded="false"
+            >
+                <span></span><span></span>
+            </button>
+            <nav
+                class="site-nav"
+                aria-label="Main navigation"
+            >
+                <a href="index.html">Home</a
+                ><a
+                    class="active"
+                    href="projects.html"
+                    >Projects</a
+                ><a href="about.html">About</a>
+            </nav>
+        </header>
+        <main>
+            <section class="page-hero page-wrap">
+                <p class="eyebrow">02 / Selected work</p>
+                <h1>Ideas made <span>real.</span></h1>
+                <p class="page-hero-intro">
+                    A small collection of projects, experiments, and lessons from the last few years
+                    of building things for the web.
+                </p>
+            </section>
+            <section class="project-list-heading page-wrap">
+                <p class="eyebrow">The work</p>
+                <h2>Projects I've made.</h2>
+            </section>
+            <section
+                class="project-list page-wrap"
+                aria-label="Project list"
+            >
+                <button
+                    class="list-item project-trigger"
+                    type="button"
+                    data-project="coding-pathways"
+                >
+                    <span class="list-number">01</span>
+                    <div>
+                        <h2>Coding Pathways</h2>
+                        <div class="tag-list">
+                            <span>Node.js</span><span>React</span><span>MongoDB</span
+                            ><span>JavaScript</span>
+                        </div>
+                    </div>
+                    <p>
+                        A collaborative coding platform with dedicated learning pathways for AI,
+                        DSA, game development, and software engineering, plus realtime
+                        collaboration.
+                    </p>
+                    <span class="list-arrow">↗</span>
+                </button>
+                <button
+                    class="list-item project-trigger"
+                    type="button"
+                    data-project="lifemaxx"
+                >
+                    <span class="list-number">02</span>
+                    <div>
+                        <h2>Lifemaxx</h2>
+                        <div class="tag-list">
+                            <span>Social platform</span><span>Journeys</span><span>Community</span>
+                        </div>
+                    </div>
+                    <p>
+                        A self-improvement social platform where users can create journeys, discover
+                        people on the same path, and grow alongside a like-minded community.
+                    </p>
+                    <span class="list-arrow">↗</span>
+                </button>
+                <button
+                    class="list-item project-trigger"
+                    type="button"
+                    data-project="realtime-chat"
+                >
+                    <span class="list-number">03</span>
+                    <div>
+                        <h2>Realtime Chat</h2>
+                        <div class="tag-list">
+                            <span>Node.js</span><span>WebSockets</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                    <p>
+                        A realtime communication app built with Node.js and WebSockets, allowing
+                        users to exchange messages with minimal delay.
+                    </p>
+                    <span class="list-arrow">↗</span>
+                </button>
+                <button
+                    class="list-item project-trigger"
+                    type="button"
+                    data-project="calorie-counter"
+                >
+                    <span class="list-number">04</span>
+                    <div>
+                        <h2>Calorie Counter</h2>
+                        <div class="tag-list">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span
+                            ><span>Node.js</span><span>MongoDB</span>
+                        </div>
+                    </div>
+                    <p>
+                        A team-built nutrition app that helps users count calories and track their
+                        macros in one clear, accessible dashboard.
+                    </p>
+                    <span class="list-arrow">↗</span>
+                </button>
+            </section>
+            <div
+                class="project-modal"
+                id="project-modal"
+                aria-hidden="true"
+            >
+                <div
+                    class="modal-backdrop"
+                    data-modal-close
+                ></div>
+                <section
+                    class="modal-panel"
+                    role="dialog"
+                    aria-modal="true"
+                    aria-labelledby="modal-title"
+                >
+                    <button
+                        class="modal-close"
+                        type="button"
+                        aria-label="Close project gallery"
+                        data-modal-close
+                    >
+                        ×
+                    </button>
+                    <div class="modal-copy">
+                        <p
+                            class="eyebrow"
+                            id="modal-kicker"
+                        ></p>
+                        <h2 id="modal-title"></h2>
+                        <p id="modal-description"></p>
+                        <div
+                            class="tag-list"
+                            id="modal-tags"
+                        ></div>
+                    </div>
+                    <div
+                        class="modal-gallery"
+                        id="modal-gallery"
+                    ></div>
+                </section>
+            </div>
+        </main>
+        <footer class="site-footer page-wrap">
+            <a
+                class="brand"
+                href="index.html"
+                >eesa munir<span class="brand-dot">.</span></a
+            >
+            <p>Built with curiosity &amp; too much coffee.</p>
+            <div class="footer-links">
+                <a href="mailto:eesamunir95@gmail.com">eesamunir95@gmail.com</a
+                ><a
+                    class="social-link"
+                    href="https://www.linkedin.com/in/eesa-munir/"
+                    aria-label="LinkedIn"
+                    title="LinkedIn"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><img
+                        src="images/linkedin_icon.png"
+                        alt="" /></a
+                ><a
+                    class="social-link"
+                    href="https://github.com/Eesa2323"
+                    aria-label="GitHub"
+                    title="GitHub"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><img
+                        src="images/github_icon.png"
+                        alt=""
+                /></a>
+            </div>
+            <p class="copyright">© 2026 Eesa</p>
+        </footer>
+        <script src="js/main.js"></script>
+    </body>
+</html>
