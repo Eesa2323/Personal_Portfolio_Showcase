@@ -22,7 +22,7 @@ const projects = {
         images: ["codecraft1.png", "codecraft2.png", "codecraft3.png"],
     },
     lifemaxx: {
-        kicker: "02 / Self-improvement social platform",
+        kicker: "03 / Self-improvement social platform",
         title: "Lifemaxx",
         description:
             "A social media platform focused on self-improvement. Users can create their own journeys, discover other people working toward similar goals, and find encouragement from a community moving in the same direction.",
@@ -30,7 +30,7 @@ const projects = {
         images: ["lifemax1.png", "lifemax2.png", "lifemax3.png"],
     },
     "realtime-chat": {
-        kicker: "03 / Realtime communication",
+        kicker: "04 / Realtime communication",
         title: "Realtime Chat",
         description:
             "A focused communication app that lets users connect and exchange messages instantly. The project uses Node.js and WebSockets to keep conversations responsive and connected without relying on page refreshes.",
@@ -38,12 +38,32 @@ const projects = {
         images: ["chatapp1.jpg"],
     },
     "calorie-counter": {
-        kicker: "04 / Team project",
+        kicker: "05 / Team project",
         title: "Calorie Counter",
         description:
             "A team-built nutrition app that helps users count calories and keep track of their daily macros. The workflow keeps food logging clear and practical, with a full stack built using HTML, CSS, JavaScript, Node.js, and MongoDB.",
         tags: ["HTML", "CSS", "JavaScript", "Node.js", "MongoDB"],
         images: ["caltrack1.png", "caltrack2.png"],
+    },
+    "smart-task-engine": {
+        kicker: "02 / Project management application",
+        title: "Smart Task and Dependency Engine",
+        description:
+            "Smart Task & Dependency Engine is a Jira-style project management application for creating projects, managing issues, planning sprints, and tracking progress. It includes boards, backlogs, sprint-specific boards, drag-and-drop planning, issue dependencies, timelines, reports, comments, and project switching. The application uses data structures and algorithms, including directed graphs, cycle detection, topological sorting, queues, stacks, and priority-based scheduling. It is built with ASP.NET Core, C#, React, TypeScript, Entity Framework Core, and Microsoft SQL Server.",
+        tags: [
+            "ASP.NET Core",
+            "C#",
+            "React",
+            "TypeScript",
+            "Entity Framework Core",
+            "Microsoft SQL Server",
+        ],
+        images: [
+            "projectplanner1.png",
+            "projectplanner2.png",
+            "projectplanner3.png",
+            "projectplanner4.png",
+        ],
     },
 }
 
