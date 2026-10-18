@@ -19,22 +19,25 @@ const projects = {
         description:
             "A collaborative coding platform inspired by the best parts of LeetCode. Users can follow dedicated pathways for AI, data structures and algorithms, game development, and software engineering, while collaborating with other learners in realtime. Built with Node.js, React, MongoDB, and JavaScript.",
         tags: ["Node.js", "React", "MongoDB", "JavaScript"],
+        github: "https://github.com/Eesa2323/Collaborative-coding-platform",
         images: ["codecraft1.png", "codecraft2.png", "codecraft3.png"],
     },
-    "gridstock": {
+    gridstock: {
         kicker: "02 / Warehouse inventory &amp; picker routing",
         title: "GridStock",
         description:
             "GridStock is a Java Spring Boot warehouse inventory and picker-routing application. Dijkstra's algorithm computes optimal picking routes over a grid graph. In-memory H2 database, zero-setup demo.",
         tags: ["Java", "Spring Boot", "H2 DB", "Dijkstra's Algorithm"],
+        github: "https://github.com/Eesa2323/Java_Spring_Inventory_Management",
         images: ["gridstock1.png", "gridstock2.png", "gridstock3.png", "gridstock4.png"],
     },
-    "lifemaxx": {
+    lifemaxx: {
         kicker: "03 / Self-improvement social platform",
         title: "Lifemaxx",
         description:
             "A social media platform focused on self-improvement. Users can create their own journeys, discover other people working toward similar goals, and find encouragement from a community moving in the same direction. It allows realtime messaging and interactive communities.",
         tags: ["Social platform", "Journeys", "Community"],
+        github: "https://github.com/Eesa2323/lifemaxx_social_app",
         images: ["lifemax1.png", "lifemax2.png", "lifemax3.png"],
     },
     "smart-task-engine": {
@@ -51,6 +54,7 @@ const projects = {
             "Microsoft SQL Server",
             "Microservices",
         ],
+        github: "https://github.com/Eesa2323/Project_Planner_ASP_NET_CSHARP",
         images: [
             "projectplanner1.png",
             "projectplanner2.png",
@@ -64,6 +68,7 @@ const projects = {
         description:
             "A focused communication app that lets users connect and exchange messages instantly. The project uses Node.js and WebSockets to keep conversations responsive and connected without relying on page refreshes.",
         tags: ["Node.js", "WebSockets", "JavaScript"],
+        github: "https://github.com/Eesa2323/realtime-chat",
         images: ["chatapp1.jpg"],
     },
     "calorie-counter-bottom": {
@@ -72,6 +77,7 @@ const projects = {
         description:
             "A team-built nutrition app that helps users count calories and keep track of their daily macros. The workflow keeps food logging clear and practical, with a full stack built using HTML, CSS, JavaScript, Node.js, and MongoDB.",
         tags: ["HTML", "CSS", "JavaScript", "Node.js", "MongoDB"],
+        github: "https://github.com/Eesa2323/calorie_counter",
         images: ["caltrack1.png", "caltrack2.png"],
     },
     "news-outlet": {
@@ -80,9 +86,10 @@ const projects = {
         description:
             "A full-featured Flask blog/news application with SQLite persistence, user authentication, post management, likes, comments, and notifications.",
         tags: ["Flask", "SQLite", "Python"],
+        github: "https://github.com/Eesa2323/news_application_flask",
         images: ["flask1.png", "flask2.png", "flask3.png"],
     },
-    "ledgerly": {
+    ledgerly: {
         kicker: "05 / Expense-sharing app",
         title: "Ledgerly",
         description:
@@ -95,6 +102,7 @@ const projects = {
             "JWT",
             "ASP.NET Core Identity",
         ],
+        github: "https://github.com/Eesa2323/Bill_Spliiter_ASP_NET",
         images: ["legerly1.png", "legerly2.png", "legerly3.png", "legerly4.png"],
     },
 }
@@ -119,6 +127,10 @@ if (projectModal && projectTriggers.length) {
             modalTitle.textContent = project.title
             modalDescription.textContent = project.description
             modalTags.innerHTML = project.tags.map((tag) => `<span>${tag}</span>`).join("")
+            const modalGithub = document.querySelector("#modal-github")
+            if (modalGithub) {
+                modalGithub.href = project.github || "https://github.com/Eesa2323"
+            }
             modalGallery.innerHTML = project.images
                 .map(
                     (image, index) =>
