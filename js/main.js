@@ -28,7 +28,7 @@ const projects = {
         description:
             "GridStock is a Java Spring Boot warehouse inventory and picker-routing application. Dijkstra's algorithm computes optimal picking routes over a grid graph. In-memory H2 database, zero-setup demo.",
         tags: ["Java", "Spring Boot", "H2 DB", "Dijkstra's Algorithm"],
-        github: "https://github.com/Eesa2323/Java_Spring_Inventory_Management",
+        github: "https://github.com/Eesa2323/GridStock_Java_Spring_Inventory_Management",
         images: ["gridstock1.png", "gridstock2.png", "gridstock3.png", "gridstock4.png"],
     },
     lifemaxx: {
@@ -82,11 +82,11 @@ const projects = {
     },
     "news-outlet": {
         kicker: "08 / Flask blog &amp; news app",
-        title: "News Outlet",
+        title: "Ink and Signal",
         description:
             "A full-featured Flask blog/news application with SQLite persistence, user authentication, post management, likes, comments, and notifications.",
         tags: ["Flask", "SQLite", "Python"],
-        github: "https://github.com/Eesa2323/news_application_flask",
+        github: "https://github.com/Eesa2323/ink_signal_news_application_flask",
         images: ["flask1.png", "flask2.png", "flask3.png"],
     },
     ledgerly: {
@@ -102,7 +102,7 @@ const projects = {
             "JWT",
             "ASP.NET Core Identity",
         ],
-        github: "https://github.com/Eesa2323/Bill_Spliiter_ASP_NET",
+        github: "https://github.com/Eesa2323/Ledgerly_Bill_Spliiter_ASP_NET",
         images: ["legerly1.png", "legerly2.png", "legerly3.png", "legerly4.png"],
     },
 }
