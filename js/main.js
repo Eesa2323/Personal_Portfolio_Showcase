@@ -21,33 +21,25 @@ const projects = {
         tags: ["Node.js", "React", "MongoDB", "JavaScript"],
         images: ["codecraft1.png", "codecraft2.png", "codecraft3.png"],
     },
-    lifemaxx: {
+    "gridstock": {
+        kicker: "02 / Warehouse inventory &amp; picker routing",
+        title: "GridStock",
+        description:
+            "GridStock is a Java Spring Boot warehouse inventory and picker-routing application. Dijkstra's algorithm computes optimal picking routes over a grid graph. In-memory H2 database, zero-setup demo.",
+        tags: ["Java", "Spring Boot", "H2 DB", "Dijkstra's Algorithm"],
+        images: ["gridstock1.png", "gridstock2.png", "gridstock3.png", "gridstock4.png"],
+    },
+    "lifemaxx": {
         kicker: "03 / Self-improvement social platform",
         title: "Lifemaxx",
         description:
-            "A social media platform focused on self-improvement. Users can create their own journeys, discover other people working toward similar goals, and find encouragement from a community moving in the same direction.",
+            "A social media platform focused on self-improvement. Users can create their own journeys, discover other people working toward similar goals, and find encouragement from a community moving in the same direction. It allows realtime messaging and interactive communities.",
         tags: ["Social platform", "Journeys", "Community"],
         images: ["lifemax1.png", "lifemax2.png", "lifemax3.png"],
     },
-    "realtime-chat": {
-        kicker: "04 / Realtime communication",
-        title: "Realtime Chat",
-        description:
-            "A focused communication app that lets users connect and exchange messages instantly. The project uses Node.js and WebSockets to keep conversations responsive and connected without relying on page refreshes.",
-        tags: ["Node.js", "WebSockets", "JavaScript"],
-        images: ["chatapp1.jpg"],
-    },
-    "calorie-counter": {
-        kicker: "05 / Team project",
-        title: "Calorie Counter",
-        description:
-            "A team-built nutrition app that helps users count calories and keep track of their daily macros. The workflow keeps food logging clear and practical, with a full stack built using HTML, CSS, JavaScript, Node.js, and MongoDB.",
-        tags: ["HTML", "CSS", "JavaScript", "Node.js", "MongoDB"],
-        images: ["caltrack1.png", "caltrack2.png"],
-    },
     "smart-task-engine": {
-        kicker: "02 / Project management application",
-        title: "Smart Task and Dependency Engine",
+        kicker: "04 / Project management application",
+        title: "Smart Task & Dependency Engine",
         description:
             "Smart Task & Dependency Engine is a Jira-style project management application for creating projects, managing issues, planning sprints, and tracking progress. It includes boards, backlogs, sprint-specific boards, drag-and-drop planning, issue dependencies, timelines, reports, comments, and project switching. The application uses data structures and algorithms, including directed graphs, cycle detection, topological sorting, queues, stacks, and priority-based scheduling. It is built with ASP.NET Core, C#, React, TypeScript, Entity Framework Core, and Microsoft SQL Server.",
         tags: [
@@ -57,6 +49,7 @@ const projects = {
             "TypeScript",
             "Entity Framework Core",
             "Microsoft SQL Server",
+            "Microservices",
         ],
         images: [
             "projectplanner1.png",
@@ -64,6 +57,45 @@ const projects = {
             "projectplanner3.png",
             "projectplanner4.png",
         ],
+    },
+    "realtime-chat-bottom": {
+        kicker: "07 / Realtime communication",
+        title: "Realtime Chat",
+        description:
+            "A focused communication app that lets users connect and exchange messages instantly. The project uses Node.js and WebSockets to keep conversations responsive and connected without relying on page refreshes.",
+        tags: ["Node.js", "WebSockets", "JavaScript"],
+        images: ["chatapp1.jpg"],
+    },
+    "calorie-counter-bottom": {
+        kicker: "08 / Team project",
+        title: "Calorie Counter",
+        description:
+            "A team-built nutrition app that helps users count calories and keep track of their daily macros. The workflow keeps food logging clear and practical, with a full stack built using HTML, CSS, JavaScript, Node.js, and MongoDB.",
+        tags: ["HTML", "CSS", "JavaScript", "Node.js", "MongoDB"],
+        images: ["caltrack1.png", "caltrack2.png"],
+    },
+    "news-outlet": {
+        kicker: "08 / Flask blog &amp; news app",
+        title: "News Outlet",
+        description:
+            "A full-featured Flask blog/news application with SQLite persistence, user authentication, post management, likes, comments, and notifications.",
+        tags: ["Flask", "SQLite", "Python"],
+        images: ["flask1.png", "flask2.png", "flask3.png"],
+    },
+    "ledgerly": {
+        kicker: "05 / Expense-sharing app",
+        title: "Ledgerly",
+        description:
+            "A Splitwise-inspired expense-sharing app built with .NET 10 and ASP.NET Core, using SQL Server via Entity Framework Core, JWT + rotating refresh tokens through ASP.NET Core Identity, and handling group/direct expenses, invitations, settlements, budgets, and live currency conversion via the Frankfurter API.",
+        tags: [
+            ".NET 10",
+            "ASP.NET Core",
+            "SQL Server",
+            "Entity Framework Core",
+            "JWT",
+            "ASP.NET Core Identity",
+        ],
+        images: ["legerly1.png", "legerly2.png", "legerly3.png", "legerly4.png"],
     },
 }
 
@@ -103,6 +135,33 @@ if (projectModal && projectTriggers.length) {
     projectModal.querySelectorAll("[data-modal-close]").forEach((element) => {
         element.addEventListener("click", closeModal)
     })
+
+    const lightbox = document.querySelector("#lightbox")
+    const lightboxImage = document.querySelector("#lightbox-image")
+
+    if (lightbox && lightboxImage && modalGallery) {
+        const closeLightbox = () => {
+            lightbox.classList.remove("open")
+            lightbox.setAttribute("aria-hidden", "true")
+        }
+
+        modalGallery.addEventListener("click", (event) => {
+            const img = event.target.closest("img")
+            if (!img) return
+            lightboxImage.src = img.src
+            lightboxImage.alt = img.alt
+            lightbox.classList.add("open")
+            lightbox.setAttribute("aria-hidden", "false")
+        })
+
+        lightbox.querySelectorAll("[data-lightbox-close]").forEach((element) => {
+            element.addEventListener("click", closeLightbox)
+        })
+
+        lightbox.addEventListener("click", (event) => {
+            if (event.target === lightbox) closeLightbox()
+        })
+    }
 
     document.addEventListener("keydown", (event) => {
         if (event.key === "Escape" && projectModal.classList.contains("open")) closeModal()

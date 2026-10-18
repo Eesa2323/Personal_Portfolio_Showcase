@@ -95,20 +95,20 @@
                 <button
                     class="list-item project-trigger"
                     type="button"
-                    data-project="smart-task-engine"
+                    data-project="gridstock"
                 >
                     <span class="list-number">02</span>
                     <div>
-                        <h2>Smart Task and Dependency Engine</h2>
+                        <h2>GridStock</h2>
                         <div class="tag-list">
-                            <span>ASP.NET Core</span><span>C#</span><span>React</span
-                            ><span>TypeScript</span><span>EF Core</span><span>SQL Server</span>
+                            <span>Java</span><span>Spring Boot</span><span>H2 DB</span
+                            ><span>Dijkstra's Algorithm</span>
                         </div>
                     </div>
                     <p>
-                        A Jira-style project management application for creating projects, managing
-                        issues, planning sprints, and tracking progress with dependency-aware
-                        scheduling.
+                        GridStock — a Java Spring Boot warehouse inventory &amp; picker-routing
+                        app. Dijkstra's algorithm computes optimal picking routes over a grid
+                        graph. In-memory H2 DB, zero-setup demo.
                     </p>
                     <span class="list-arrow">↗</span>
                 </button>
@@ -126,16 +126,82 @@
                     </div>
                     <p>
                         A self-improvement social platform where users can create journeys, discover
-                        people on the same path, and grow alongside a like-minded community.
+                        people on the same path, and grow alongside a like-minded community. It
+                        allows realtime messaging and interactive communities.
                     </p>
                     <span class="list-arrow">↗</span>
                 </button>
                 <button
                     class="list-item project-trigger"
                     type="button"
-                    data-project="realtime-chat"
+                    data-project="smart-task-engine"
                 >
                     <span class="list-number">04</span>
+                    <div>
+                        <h2>Smart Task &amp; Dependency Engine</h2>
+                        <div class="tag-list">
+                            <span>ASP.NET Core</span><span>C#</span><span>React</span
+                            ><span>TypeScript</span><span>EF Core</span
+                            ><span>SQL Server</span><span>Microservices</span>
+                        </div>
+                    </div>
+                    <p>
+                        C# Based - Smart Task &amp; Dependency Engine is a Jira-style project
+                        management app for managing projects, issues, sprints, boards, dependencies,
+                        timelines, and reports. Uses algorithms such as directed graphs, cycle
+                        detection and priority-based scheduling. Built with ASP.NET Core, C#, React,
+                        TypeScript, Entity Framework Core, and Microservices.
+                    </p>
+                    <span class="list-arrow">↗</span>
+                </button>
+                <button
+                    class="list-item project-trigger"
+                    type="button"
+                    data-project="ledgerly"
+                    id="ledgerly"
+                >
+                    <span class="list-number">05</span>
+                    <div>
+                        <h2>Ledgerly</h2>
+                        <div class="tag-list">
+                            <span>.NET 10</span><span>ASP.NET Core</span
+                            ><span>SQL Server</span><span>EF Core</span><span>JWT</span
+                            ><span>ASP.NET Core Identity</span>
+                        </div>
+                    </div>
+                    <p>
+                        A Splitwise-inspired expense-sharing app built with .NET 10 and ASP.NET Core,
+                        using SQL Server via Entity Framework Core, JWT + rotating refresh tokens
+                        through ASP.NET Core Identity, and handling group/direct expenses,
+                        invitations, settlements, budgets, and live currency conversion via the
+                        Frankfurter API.
+                    </p>
+                    <span class="list-arrow">↗</span>
+                </button>
+                <button
+                    class="list-item project-trigger"
+                    type="button"
+                    data-project="news-outlet"
+                >
+                    <span class="list-number">06</span>
+                    <div>
+                        <h2>News Outlet</h2>
+                        <div class="tag-list">
+                            <span>Flask</span><span>SQLite</span><span>Python</span>
+                        </div>
+                    </div>
+                    <p>
+                        A full-featured Flask blog/news application with SQLite persistence, user
+                        authentication, post management, likes, comments, and notifications.
+                    </p>
+                    <span class="list-arrow">↗</span>
+                </button>
+                <button
+                    class="list-item project-trigger"
+                    type="button"
+                    data-project="realtime-chat-bottom"
+                >
+                    <span class="list-number">07</span>
                     <div>
                         <h2>Realtime Chat</h2>
                         <div class="tag-list">
@@ -151,9 +217,9 @@
                 <button
                     class="list-item project-trigger"
                     type="button"
-                    data-project="calorie-counter"
+                    data-project="calorie-counter-bottom"
                 >
-                    <span class="list-number">05</span>
+                    <span class="list-number">08</span>
                     <div>
                         <h2>Calorie Counter</h2>
                         <div class="tag-list">
@@ -202,12 +268,41 @@
                             class="tag-list"
                             id="modal-tags"
                         ></div>
+                        <a
+                            class="modal-github"
+                            id="modal-github"
+                            href="https://github.com/Eesa2323"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <span>View on GitHub</span>
+                            <span>↗</span>
+                        </a>
                     </div>
                     <div
                         class="modal-gallery"
                         id="modal-gallery"
                     ></div>
                 </section>
+            </div>
+            <div
+                class="lightbox"
+                id="lightbox"
+                aria-hidden="true"
+            >
+                <button
+                    class="lightbox-close"
+                    type="button"
+                    aria-label="Close image"
+                    data-lightbox-close
+                >
+                    ×
+                </button>
+                <img
+                    class="lightbox-image"
+                    id="lightbox-image"
+                    alt=""
+                />
             </div>
         </main>
         <footer class="site-footer page-wrap">
