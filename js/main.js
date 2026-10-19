@@ -103,7 +103,7 @@ const projects = {
             "ASP.NET Core Identity",
         ],
         github: "https://github.com/Eesa2323/Ledgerly_Bill_Spliiter_ASP_NET",
-        images: ["legerly1.png", "legerly2.png", "legerly3.png", "legerly4.png"],
+        images: ["legerly1.png", "legerly3.png", "legerly4.png"],
     },
 }
 
