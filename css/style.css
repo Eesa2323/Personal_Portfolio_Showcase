@@ -757,13 +757,14 @@ h1 em {
 .about-image {
     position: relative;
     min-height: 540px;
+    overflow: hidden;
     background: url("https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1000&q=85")
         center/cover;
 }
 .about-image::after {
     content: "keep learning";
     position: absolute;
-    right: -28px;
+    right: 12px;
     bottom: 33px;
     padding: 12px 18px;
     background: var(--lime);
@@ -786,11 +787,18 @@ h1 em {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 12px;
-    margin-top: 37px;
+    margin-top: 14px;
     padding-top: 25px;
     border-top: 1px solid var(--line);
     list-style: none;
     padding-left: 0;
+}
+.skill-heading {
+    margin: 48px 0 8px;
+    font: 500 0.7rem/1.2 var(--mono);
+    color: var(--muted);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
 }
 .skill-list li {
     font: 0.76rem var(--mono);
@@ -1114,6 +1122,12 @@ h1 em {
     }
     .about-image {
         min-height: 370px;
+    }
+    .about-image::after {
+        right: 12px;
+        bottom: 18px;
+        padding: 10px 14px;
+        font-size: 0.62rem;
     }
     .about-copy h2 {
         font-size: 2.8rem;
