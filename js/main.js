@@ -13,13 +13,14 @@ const projectModal = document.querySelector("#project-modal")
 const projectTriggers = document.querySelectorAll(".project-trigger")
 
 const projects = {
-    "coding-pathways": {
+"coding-pathways": {
         kicker: "01 / Final year university project",
         title: "Coding Pathways",
         description:
-            "A collaborative coding platform inspired by the best parts of LeetCode. Users can follow dedicated pathways for AI, data structures and algorithms, game development, and software engineering, while collaborating with other learners in realtime. Built with Node.js, React, MongoDB, and JavaScript.",
+            "Deployed — a collaborative coding platform inspired by the best parts of LeetCode. Users can follow dedicated pathways for AI, data structures and algorithms, game development, and software engineering, while collaborating with other learners in realtime. Built with Node.js, React, MongoDB, and JavaScript.",
         tags: ["Node.js", "React", "MongoDB", "JavaScript"],
-        github: "https://github.com/Eesa2323/Collaborative-coding-platform",
+        github: "https://github.com/Eesa2323/coding-pathways",
+        live: "https://collaborative-coding-platform-pi.vercel.app/",
         images: ["codecraft1.png", "codecraft2.png", "codecraft3.png"],
     },
     gridstock: {
@@ -130,6 +131,15 @@ if (projectModal && projectTriggers.length) {
             const modalGithub = document.querySelector("#modal-github")
             if (modalGithub) {
                 modalGithub.href = project.github || "https://github.com/Eesa2323"
+            }
+            const modalLive = document.querySelector("#modal-live")
+            if (modalLive) {
+                if (project.live) {
+                    modalLive.href = project.live
+                    modalLive.hidden = false
+                } else {
+                    modalLive.hidden = true
+                }
             }
             modalGallery.innerHTML = project.images
                 .map(

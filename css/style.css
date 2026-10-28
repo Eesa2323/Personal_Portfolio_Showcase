@@ -172,6 +172,18 @@ h1 em {
 .text-link:hover span {
     transform: translateX(4px);
 }
+.project-live-link {
+    display: inline-block;
+    margin: 6px 0 12px;
+    font: 500 0.7rem/1 var(--mono);
+    color: var(--coral);
+    text-decoration: none;
+    border-bottom: 1px solid var(--coral);
+}
+.project-live-link:hover {
+    color: var(--ink);
+    border-color: var(--ink);
+}
 .hero-art {
     position: relative;
     min-height: 440px;
@@ -657,12 +669,30 @@ h1 em {
     align-items: center;
     gap: 6px;
     margin-top: 22px;
+    margin-right: 24px;
     color: var(--blue);
     font: 600 0.8rem var(--sans);
     text-decoration: underline;
     text-underline-offset: 3px;
 }
 .modal-github:hover {
+    text-decoration-thickness: 2px;
+}
+.modal-live {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    color: var(--coral);
+    font: 600 0.8rem var(--sans);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+.modal-live[hidden] {
+    display: none;
+}
+.modal-live:hover {
     text-decoration-thickness: 2px;
 }
 .modal-gallery {
