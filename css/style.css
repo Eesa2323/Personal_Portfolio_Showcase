@@ -445,6 +445,10 @@ h1 em {
     font-size: 1.03rem;
     line-height: 1.55;
 }
+.statement-section .eyebrow {
+    color: var(--paper);
+    opacity: 0.7;
+}
 .site-footer {
     display: grid;
     grid-template-columns: auto minmax(0, 1fr) auto auto;
