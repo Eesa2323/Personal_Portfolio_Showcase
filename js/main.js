@@ -25,9 +25,9 @@ const projects = {
     },
     "transit-optimiser": {
         kicker: "02 / Interactive graph algorithm learning tool",
-        title: "Transit Optimiser and Route Planner",
+        title: "Route optimiser",
         description:
-            "Developed and deployed an interactive learning tool that helps users explore, understand and compare graph algorithms through route planning on a model of Sheffield's tram network. Implemented five algorithms: Dijkstra, A*, Breadth-First Search, Bellman-Ford and Kruskal's Minimum Spanning Tree, with step-by-step visualisations, play/pause controls, live priority queue and distance table updates, and side-by-side performance comparisons.",
+            "Built and deployed an interactive Sheffield tram route planner visualising and comparing five graph algorithms through step-by-step animations and performance metrics.",
         tags: [
             "ASP.NET Core",
             "C#",
