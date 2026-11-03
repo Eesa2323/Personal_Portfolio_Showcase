@@ -23,8 +23,26 @@ const projects = {
         live: "https://collaborative-coding-platform-pi.vercel.app/",
         images: ["codecraft1.png", "codecraft2.png", "codecraft3.png"],
     },
+    "transit-optimiser": {
+        kicker: "02 / Interactive graph algorithm learning tool",
+        title: "Transit Optimiser and Route Planner",
+        description:
+            "Developed and deployed an interactive learning tool that helps users explore, understand and compare graph algorithms through route planning on a model of Sheffield's tram network. Implemented five algorithms: Dijkstra, A*, Breadth-First Search, Bellman-Ford and Kruskal's Minimum Spanning Tree, with step-by-step visualisations, play/pause controls, live priority queue and distance table updates, and side-by-side performance comparisons.",
+        tags: [
+            "ASP.NET Core",
+            "C#",
+            "Dijkstra",
+            "A*",
+            "Breadth-First Search",
+            "Bellman-Ford",
+            "Kruskal's MST",
+        ],
+        github: "https://github.com/Eesa2323/Transit-Optimiser-Sheffield-Route-Planner",
+        live: "https://transit-optimiser-sheffield-route-planner.onrender.com/",
+        images: ["routeopt1.png", "routeop2.png", "routeop3.png"],
+    },
     gridstock: {
-        kicker: "02 / Warehouse inventory &amp; picker routing",
+        kicker: "03 / Warehouse inventory &amp; picker routing",
         title: "GridStock",
         description:
             "GridStock is a Java Spring Boot warehouse inventory and picker-routing application. Dijkstra's algorithm computes optimal picking routes over a grid graph. In-memory H2 database, zero-setup demo.",
@@ -33,7 +51,7 @@ const projects = {
         images: ["gridstock1.png", "gridstock2.png", "gridstock3.png", "gridstock4.png"],
     },
     lifemaxx: {
-        kicker: "03 / Self-improvement social platform",
+        kicker: "04 / Self-improvement social platform",
         title: "Lifemaxx",
         description:
             "A social media platform focused on self-improvement. Users can create their own journeys, discover other people working toward similar goals, and find encouragement from a community moving in the same direction. It allows realtime messaging and interactive communities.",
@@ -42,7 +60,7 @@ const projects = {
         images: ["lifemax1.png", "lifemax2.png", "lifemax3.png"],
     },
     "smart-task-engine": {
-        kicker: "04 / Project management application",
+        kicker: "05 / Project management application",
         title: "Smart Task & Dependency Engine",
         description:
             "Smart Task & Dependency Engine is a Jira-style project management application for creating projects, managing issues, planning sprints, and tracking progress. It includes boards, backlogs, sprint-specific boards, drag-and-drop planning, issue dependencies, timelines, reports, comments, and project switching. The application uses data structures and algorithms, including directed graphs, cycle detection, topological sorting, queues, stacks, and priority-based scheduling. It is built with ASP.NET Core, C#, React, TypeScript, Entity Framework Core, and Microsoft SQL Server.",
@@ -64,7 +82,7 @@ const projects = {
         ],
     },
     "realtime-chat-bottom": {
-        kicker: "07 / Realtime communication",
+        kicker: "08 / Realtime communication",
         title: "Realtime Chat",
         description:
             "A focused communication app that lets users connect and exchange messages instantly. The project uses Node.js and WebSockets to keep conversations responsive and connected without relying on page refreshes.",
@@ -73,7 +91,7 @@ const projects = {
         images: ["chatapp1.jpg"],
     },
     "calorie-counter-bottom": {
-        kicker: "08 / Team project",
+        kicker: "09 / Team project",
         title: "Calorie Counter",
         description:
             "A team-built nutrition app that helps users count calories and keep track of their daily macros. The workflow keeps food logging clear and practical, with a full stack built using HTML, CSS, JavaScript, Node.js, and MongoDB.",
@@ -82,7 +100,7 @@ const projects = {
         images: ["caltrack1.png", "caltrack2.png"],
     },
     "news-outlet": {
-        kicker: "08 / Flask blog &amp; news app",
+        kicker: "07 / Flask blog &amp; news app",
         title: "Ink and Signal",
         description:
             "A full-featured Flask blog/news application with SQLite persistence, user authentication, post management, likes, comments, and notifications.",
@@ -91,7 +109,7 @@ const projects = {
         images: ["flask1.png", "flask2.png", "flask3.png"],
     },
     ledgerly: {
-        kicker: "05 / Expense-sharing app",
+        kicker: "06 / Expense-sharing app",
         title: "Ledgerly",
         description:
             "A Splitwise-inspired expense-sharing app built with .NET 10 and ASP.NET Core, using SQL Server via Entity Framework Core, JWT + rotating refresh tokens through ASP.NET Core Identity, and handling group/direct expenses, invitations, settlements, budgets, and live currency conversion via the Frankfurter API.",
