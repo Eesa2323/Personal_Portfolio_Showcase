@@ -19,7 +19,7 @@ const projects = {
         description:
             "Deployed — a collaborative coding platform inspired by the best parts of LeetCode. Users can follow dedicated pathways for AI, data structures and algorithms, game development, and software engineering, while collaborating with other learners in realtime. Built with Node.js, React, MongoDB, and JavaScript.",
         tags: ["Node.js", "React", "MongoDB", "JavaScript"],
-        github: "https://github.com/Eesa2323/coding-pathways",
+        github: "https://github.com/Eesa2323/Collaborative-coding-platform",
         live: "https://collaborative-coding-platform-pi.vercel.app/",
         images: ["codecraft1.png", "codecraft2.png", "codecraft3.png"],
     },
@@ -27,7 +27,7 @@ const projects = {
         kicker: "02 / Interactive graph algorithm learning tool",
         title: "Route optimiser",
         description:
-            "Built and deployed an interactive Sheffield tram route planner visualising and comparing five graph algorithms through step-by-step animations and performance metrics.",
+            "Developed and deployed an interactive route-planning tool that visualises and compares five graph algorithms (Dijkstra, A*, BFS, Bellman-Ford and Kruskal's MST) using Sheffield's tram network, featuring step-by-step animations, live priority queue and distance table updates, playback controls and performance comparisons. Built with ASP.NET Core C#, Docker and xUnit",
         tags: [
             "ASP.NET Core",
             "C#",
@@ -81,17 +81,8 @@ const projects = {
             "projectplanner4.png",
         ],
     },
-    "realtime-chat-bottom": {
-        kicker: "08 / Realtime communication",
-        title: "Realtime Chat",
-        description:
-            "A focused communication app that lets users connect and exchange messages instantly. The project uses Node.js and WebSockets to keep conversations responsive and connected without relying on page refreshes.",
-        tags: ["Node.js", "WebSockets", "JavaScript"],
-        github: "https://github.com/Eesa2323/realtime-chat",
-        images: ["chatapp1.jpg"],
-    },
     "calorie-counter-bottom": {
-        kicker: "09 / Team project",
+        kicker: "08 / Team project",
         title: "Calorie Counter",
         description:
             "A team-built nutrition app that helps users count calories and keep track of their daily macros. The workflow keeps food logging clear and practical, with a full stack built using HTML, CSS, JavaScript, Node.js, and MongoDB.",
